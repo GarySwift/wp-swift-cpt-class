@@ -51,7 +51,7 @@ class WP_Swift_CPT_Class {
         // echo "<pre>";var_dump($image);echo "</pre>";
         ?>
         <?php if ($image): ?>
-        	<div class="text-center"><img src="<?php echo $image["sizes"]["thumbnail"] ?>" alt=""></div>
+        	<div class="text-center"><img class="thumbnail custom" src="<?php echo $image["sizes"]["medium_large"] ?>" alt=""></div>
         <?php endif ?>
         	<?php if ( get_field('comment') ) : ?>
         		<div class="entry-content"><?php echo get_field('comment'); ?></div>
